@@ -3,7 +3,7 @@ import parseArgs from 'minimist';
 
 const options = { default: { port: 8080 } }
 
-const PORT = options.default.port || process.env.PORT;
+const PORT = process.env.PORT;
 
 const server = app.listen(PORT, () => {
     console.log(`Servidor http escuchando en el puerto ${server.address().port}`)
